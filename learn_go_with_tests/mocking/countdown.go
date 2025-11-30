@@ -10,6 +10,10 @@ import (
 const finalWord = "Go!"
 const countdownStart = 3
 
+type Sleeper interface {
+	Sleep()
+}
+
 type ConfigurableSleeper struct {
 	duration time.Duration
 	sleep    func(time.Duration)
@@ -17,10 +21,6 @@ type ConfigurableSleeper struct {
 
 func (c *ConfigurableSleeper) Sleep() {
 	c.sleep(c.duration)
-}
-
-type Sleeper interface {
-	Sleep()
 }
 
 func main() {
