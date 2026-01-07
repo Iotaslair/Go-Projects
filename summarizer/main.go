@@ -2,7 +2,7 @@ package main
 
 import (
 	"summarizer/alertevent"
-	"summarizer/assets"
+	"summarizer/contacts"
 )
 
 func main() {
@@ -19,6 +19,6 @@ func main() {
 
 	currentAlertEvent := alertevent.GetAlertEvent(processingId)
 
-	currentAssets := assets.GetAssetIds(currentAlertEvent.AlertId)
+	currentAssets := contacts.GetContactIds(currentAlertEvent.AlertId)
 
 }

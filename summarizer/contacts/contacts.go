@@ -1,4 +1,4 @@
-package assets
+package contacts
 
 import (
 	"encoding/json"
@@ -7,21 +7,21 @@ import (
 	"strings"
 )
 
-func GetAssetIds(alertEventId string) []string {
+func GetContactIds(alertEventId string) []string {
 	// In our system this is just a call to another team
 	// so using an example website that doesn't exist
 
-	url := fmt.Sprintf("https://example.com/assets/%s", alertEventId)
+	url := fmt.Sprintf("https://example.com/contacts/%s", alertEventId)
 
 	resp, err := http.Get(url)
 
 	checkError(err)
 	defer resp.Body.Close()
 
-	return parseAssetIdsFromJson(string(resp.Body))
+	return parseContactIdsFromJson(string(resp.Body))
 }
 
-func parseAssetIdsFromJson(jsonResp string) []string {
+func parseContactIdsFromJson(jsonResp string) []string {
 	assetIds := make([]string, 0)
 
 	decoder := json.NewDecoder(strings.NewReader(jsonResp))

@@ -1,4 +1,4 @@
-package assets
+package contacts
 
 import "testing"
 
