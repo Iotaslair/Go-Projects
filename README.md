@@ -2,8 +2,10 @@
 
 This is a set of folders/files that I've been building as I've been learning the Go programming language
 
-# Learning that I've completed
-- https://www.linkedin.com/learning/learning-go-24516285/learn-to-program-with-go - I started learning Go by watching this Intro to the Go Programming Language on LinkedIn Learning 
+# Stuff I've completed
+- https://www.linkedin.com/learning/learning-go-24516285/learn-to-program-with-go - I started learning Go by watching this Intro to the Go Programming Language on LinkedIn Learning
+
+# Currently learning
 - https://quii.gitbook.io/learn-go-with-tests - This is a really highly recommended book that teaches Go via Test Driven Development (TDD)
 
 # Folder Structure
